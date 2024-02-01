@@ -90,9 +90,15 @@ header>.contact-nav-main {
     align-items: center;
 }
 
-.logo {
+
+.logo>a {
+    text-decoration: none;
     display: flex;
     align-items: center;
+}
+
+.logo>a>svg:last-child {
+    margin-left: 10px;
 }
 
 .logo>svg:first-child {
@@ -188,7 +194,7 @@ header>.contact-nav-main {
 
 
 
-main>.contact-part{
+main>.contact-part {
     background-color: #3B8AC9;
     display: flex;
     justify-content: center;
@@ -196,36 +202,41 @@ main>.contact-part{
     height: 150px;
 }
 
-main>.contact-part>.contact-heading{
+main>.contact-part>.contact-heading {
     font-family: 'Nunito Sans';
     font-size: 24px;
     font-weight: 700;
     color: white;
 }
-.additional-questions{
+
+.additional-questions {
     display: flex;
     justify-content: space-between;
     padding: 80px 130px;
     align-items: center;
 }
-.additional-questions>.additional-questions-text>h1{
+
+.additional-questions>.additional-questions-text>h1 {
     font-size: 45px;
     font-weight: 600;
     font-family: 'Roboto';
 }
-.additional-questions>.additional-questions-text>.contact-text{
+
+.additional-questions>.additional-questions-text>.contact-text {
     font-size: 25px;
     font-weight: 400;
     font-family: 'Nunito Sans';
     margin-top: 50px;
     margin-bottom: 30px;
 }
-.contact-email{
+
+.contact-email {
     font-size: 25px;
     font-weight: 600;
     font-family: 'Nunito Sans';
 }
-.additional-questions>.additional-questions-image{
+
+.additional-questions>.additional-questions-image {
     width: 580px;
     height: 448px;
     background-image: url(./assets/additional-questions-image.jpeg);
@@ -234,12 +245,13 @@ main>.contact-part>.contact-heading{
     background-size: cover;
 }
 
-.contact-course-cards{
+.contact-course-cards {
     display: flex;
     justify-content: space-between;
     padding: 70px 130px;
 }
-.design-card{
+
+.design-card {
     background-image: url(./assets/design-card.jpeg);
     background-position: center;
     background-size: cover;
@@ -250,7 +262,8 @@ main>.contact-part>.contact-heading{
     justify-content: center;
     align-items: center;
 }
-.design-card-main{
+
+.design-card-main {
     background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
@@ -260,20 +273,22 @@ main>.contact-part>.contact-heading{
     width: 180px;
     height: 200px;
 }
-.design-card-main>h2{
+
+.design-card-main>h2 {
     color: rgba(59, 138, 201, 1);
     font-family: 'Roboto';
     margin-bottom: 10px;
     font-size: 20px;
 }
-.design-card-main>p{
+
+.design-card-main>p {
     font-size: 14px;
     font-family: 'Nunito Sans';
 }
 
 
 
-.front-end-card{
+.front-end-card {
     background-image: url(./assets/front-end-card.jpeg);
     background-position: center;
     background-size: cover;
@@ -284,7 +299,8 @@ main>.contact-part>.contact-heading{
     justify-content: center;
     align-items: center;
 }
-.front-end-card-main{
+
+.front-end-card-main {
     background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
@@ -294,18 +310,20 @@ main>.contact-part>.contact-heading{
     width: 180px;
     height: 200px;
 }
-.front-end-card-main>h2{
+
+.front-end-card-main>h2 {
     color: rgba(59, 138, 201, 1);
     font-family: 'Roboto';
     margin-bottom: 10px;
     font-size: 20px;
 }
-.front-end-card-main>p{
+
+.front-end-card-main>p {
     font-size: 14px;
     font-family: 'Nunito Sans';
 }
 
-.back-end-card{
+.back-end-card {
     background-image: url(./assets/back-end-card.jpeg);
     background-position: center;
     background-size: cover;
@@ -316,7 +334,8 @@ main>.contact-part>.contact-heading{
     justify-content: center;
     align-items: center;
 }
-.back-end-card-main{
+
+.back-end-card-main {
     background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
@@ -326,19 +345,21 @@ main>.contact-part>.contact-heading{
     width: 180px;
     height: 200px;
 }
-.back-end-card-main>h2{
+
+.back-end-card-main>h2 {
     color: rgba(59, 138, 201, 1);
     font-family: 'Roboto';
     margin-bottom: 10px;
     font-size: 20px;
 }
-.back-end-card-main>p{
+
+.back-end-card-main>p {
     font-size: 14px;
     font-family: 'Nunito Sans';
 }
 
 
-.qa-card{
+.qa-card {
     background-image: url(./assets/qa-card.jpeg);
     background-position: center;
     background-size: cover;
@@ -349,7 +370,8 @@ main>.contact-part>.contact-heading{
     justify-content: center;
     align-items: center;
 }
-.qa-card-main{
+
+.qa-card-main {
     background-color: rgba(255, 255, 255, 0.75);
     display: flex;
     flex-direction: column;
@@ -359,18 +381,20 @@ main>.contact-part>.contact-heading{
     width: 180px;
     height: 200px;
 }
-.qa-card-main>h2{
+
+.qa-card-main>h2 {
     color: rgba(59, 138, 201, 1);
     font-family: 'Roboto';
     margin-bottom: 10px;
     font-size: 20px;
 }
-.qa-card-main>p{
+
+.qa-card-main>p {
     font-size: 14px;
     font-family: 'Nunito Sans';
 }
 
-.contact-with-us{
+.contact-with-us {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -378,14 +402,17 @@ main>.contact-part>.contact-heading{
     background-color: #F5F7FA;
     padding: 60px 50px;
 }
-.contact-with-us-text{
+
+.contact-with-us-text {
     font-family: 'Roboto';
     margin-bottom: 30px;
 }
-.contact-with-us-register{
+
+.contact-with-us-register {
     margin-right: 40px;
 }
-.contact-with-us-register>form{
+
+.contact-with-us-register>form {
     display: flex;
     flex-direction: column;
     border: 1px solid #FFF;
@@ -395,16 +422,19 @@ main>.contact-part>.contact-heading{
     font-size: 16px;
     font-weight: 400;
 }
-.contact-with-us-register>form>label{
+
+.contact-with-us-register>form>label {
     margin-bottom: 20px;
 }
-.contact-with-us-register>form>label:not(.name-surname-input)>input{
+
+.contact-with-us-register>form>label:not(.name-surname-input)>input {
     padding: 10px;
     border: 1px solid #838383;
     color: #838383;
     width: 100%;
 }
-.name-surname-input>input{
+
+.name-surname-input>input {
     padding: 10px;
     border: 1px solid #838383;
     color: #838383;
@@ -412,13 +442,16 @@ main>.contact-part>.contact-heading{
     font-size: 16px;
     font-weight: 400;
 }
-.name-surname-input>input:not(:last-child){
+
+.name-surname-input>input:not(:last-child) {
     margin-right: 20px;
 }
-.contact-with-us-register>form>label>input:focus{
+
+.contact-with-us-register>form>label>input:focus {
     outline: none;
 }
-.contact-with-us-register>form>textarea{
+
+.contact-with-us-register>form>textarea {
     padding: 10px;
     border: 1px solid #838383;
     color: #838383;
@@ -428,14 +461,17 @@ main>.contact-part>.contact-heading{
     font-weight: 400;
     height: 100px;
 }
-.contact-with-us-register>form>textarea:focus{
+
+.contact-with-us-register>form>textarea:focus {
     outline: none;
 }
-.contact-with-us-register>form>a{
+
+.contact-with-us-register>form>a {
     color: #838383;
     margin-bottom: 20px;
 }
-.contact-with-us-register>form>button{
+
+.contact-with-us-register>form>button {
     width: 177px;
     background-color: #3B8AC9;
     border: 1px solid #3B8AC9;
@@ -445,28 +481,38 @@ main>.contact-part>.contact-heading{
     font-size: 16px;
     font-weight: 400;
 }
-.contact-with-us-details{
+
+.contact-with-us-register>form>button:hover {
+    cursor: pointer;
+}
+
+.contact-with-us-details {
     font-family: 'Nunito Sans';
     font-size: 20px;
     font-weight: 400;
 }
-.contact-with-us-details>div{
+
+.contact-with-us-details>div {
     display: flex;
     align-items: center;
     margin-bottom: 10px;
 }
-.contact-with-us-details>div>p{
+
+.contact-with-us-details>div>p {
     margin-left: 20px;
 }
-.contact-with-us-form{
+
+.contact-with-us-form {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-#map{
+
+#map {
     width: 100%;
     height: 700px;
 }
+
 footer {
     background-color: #1B213F;
     padding: 100px 0 0 0;
@@ -522,7 +568,8 @@ footer>.footer-codeart-logo {
     justify-content: center;
     align-items: center;
 }
-.footer-linkedln{
+
+.footer-linkedln {
     border: 1px solid rgba(59, 138, 201, 1);
     background-color: rgba(59, 138, 201, 1);
     width: 40px;
@@ -531,6 +578,7 @@ footer>.footer-codeart-logo {
     justify-content: center;
     align-items: center;
 }
+
 .footer-social-media-logoes>div:not(:last-child) {
     margin-right: 20px;
 }
@@ -613,13 +661,15 @@ footer>.footer-codeart-logo {
     font-weight: 400;
     font-size: 13px;
 }
-.footer-app>h2{
+
+.footer-app>h2 {
     color: white;
     font-family: 'Nunito Sans';
     font-size: 16px;
     margin-bottom: 20px;
 }
-.footer-app-for-app-store{
+
+.footer-app-for-app-store {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -627,38 +677,43 @@ footer>.footer-codeart-logo {
     background-color: #31385A;
     padding: 5px;
 }
-.app-store-logo{
+
+.app-store-logo {
     margin-right: 10px;
     width: 40px;
     height: 40px;
 }
 
-.app-store-text>a{
+.app-store-text>a {
     color: white;
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
     text-decoration: none;
 }
-.footer-app-for-play-store{
+
+.footer-app-for-play-store {
     display: flex;
     align-items: center;
     border: 1px solid #31385A;
     background-color: #31385A;
     padding: 5px 5px 5px 12px;
 }
-.play-store-logo{
+
+.play-store-logo {
     margin-right: 10px;
     height: 32px;
     width: 34px;
 }
-.play-store-text>a{
+
+.play-store-text>a {
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
     text-decoration: none;
     color: white;
 }
+
 .laws {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
     display: flex;
