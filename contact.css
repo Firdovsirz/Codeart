@@ -428,6 +428,9 @@ main>.contact-part>.contact-heading{
     font-weight: 400;
     height: 100px;
 }
+.contact-with-us-register>form>textarea:focus{
+    outline: none;
+}
 .contact-with-us-register>form>a{
     color: #838383;
     margin-bottom: 20px;
@@ -629,11 +632,13 @@ footer>.footer-codeart-logo {
     width: 40px;
     height: 40px;
 }
-.app-store-text{
+
+.app-store-text>a{
     color: white;
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
+    text-decoration: none;
 }
 .footer-app-for-play-store{
     display: flex;
@@ -647,11 +652,12 @@ footer>.footer-codeart-logo {
     height: 32px;
     width: 34px;
 }
-.play-store-text{
-    color: white;
+.play-store-text>a{
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
+    text-decoration: none;
+    color: white;
 }
 .laws {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
