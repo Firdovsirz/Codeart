@@ -168,7 +168,7 @@ header>.contact-nav-main {
     height: 40px;
     background-color: #3B8AC9;
     z-index: -1;
-    transition: .7s ease;
+    transition: .5s ease;
 }
 
 .contact-btn-create-account:hover:after {
@@ -738,4 +738,93 @@ footer>.footer-codeart-logo {
 .footer-laws-lang>p {
     margin-right: 25px;
     color: rgba(255, 255, 255, 0.20);
+}
+@media screen and (max-width : 1000px) {
+    header{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .additional-questions{
+        display: flex;
+        flex-direction: column;
+    }
+    .additional-questions>.additional-questions-image{
+        margin-top: 30px;
+        width: 700px;
+        height: 350px;
+    }
+    .additional-questions{
+        width: 100%;
+        padding: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .additional-questions>.additional-questions-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .additional-questions>.additional-questions-text>h1{
+        font-size: 40px;
+    }
+    .additional-questions>.additional-questions-text>p.contact-text{
+        font-size: 30px;
+    }
+    .additional-questions>.additional-questions-text>p:last-child{
+        font-size: 35px;
+    }
+    .contact-course-cards{
+        display: none;
+    }
+    .contact-with-us-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-with-us-form>form{
+        width: calc(100w);
+    }
+    .contact-with-us-register{
+        margin: 0 0 40px 0;
+    }
+    .contact-with-us-register>form>label>input{
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+    .contact-with-us-register>form>textarea{
+        font-size: 25px;
+    }
+    .contact-with-us-register>form>a{
+        font-size: 25px;
+    }
+    .contact-with-us-register>form>button{
+        font-size: 25px;
+        width: 250px;
+        padding: 10px 40px;
+    }
+    .contact-with-us{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-with-us-details>div>p{
+        font-size: 30px;
+    }
+    .contact-with-us-details>div>a>svg{
+        width: 80px;
+        height: 80px;
+    }
+    .name-surname-input>input{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .name-surname-input>input:last-child{
+        margin-bottom: 15px;
+    }
 }
