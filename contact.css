@@ -21,6 +21,16 @@ header>.contact-nav-main {
     color: white;
 }
 
+.contact-nav-pages{
+    display: flex;
+    align-items: center;
+}
+.contact-nav-pages>i{
+    height: 37px;
+    display: flex;
+    align-items: flex-end;
+    display: none;
+}
 .contact-nav-main>.contact-nav-pages>ul {
     display: flex;
     align-items: flex-end;
@@ -739,92 +749,99 @@ footer>.footer-codeart-logo {
     margin-right: 25px;
     color: rgba(255, 255, 255, 0.20);
 }
-@media screen and (max-width : 1000px) {
-    header{
-        display: none;
-    }
-    footer{
-        display: none;
-    }
-    .additional-questions{
-        display: flex;
-        flex-direction: column;
-    }
-    .additional-questions>.additional-questions-image{
-        margin-top: 30px;
-        width: 700px;
-        height: 350px;
-    }
-    .additional-questions{
-        width: 100%;
-        padding: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .additional-questions>.additional-questions-text{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .additional-questions>.additional-questions-text>h1{
-        font-size: 40px;
-    }
-    .additional-questions>.additional-questions-text>p.contact-text{
-        font-size: 30px;
-    }
-    .additional-questions>.additional-questions-text>p:last-child{
-        font-size: 35px;
+@media screen and (max-width : 1400px) {
+    .additional-questions-text{
+        margin-right: 20px;
     }
     .contact-course-cards{
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contact-course-cards>div{
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width : 1100px){
+    .contact-nav-secondary-logo-search-box{
+        display: flex;
+        flex-direction: column;
+    }
+    .contact-nav-secondary-logo-search-box>.logo{
+        margin-bottom: 30px;
+    }
+    .contact-nav-secondary{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-search-box{
+        margin: 0;
+    }
+    .contact-course-cards{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo>a>svg{
+        width: 80px;
+        height: 80px;
+    }
+    .contact-nav-secondary>.contact-nav-secondary-buttons{
         display: none;
+    }
+    .additional-questions{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .additional-questions-text{
+        margin-bottom: 40px;
+        margin-right: 0;
+    }
+    .contact-nav-main>.contact-nav-pages>ul{
+        display: none;
+    }
+    .contact-nav-pages>i{
+        display: flex;
+        font-size: 20px;
+    }
+    .cotact-with-us{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(-50%, -50%);
     }
     .contact-with-us-form{
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center;
-    }
-    .contact-with-us-form>form{
-        width: calc(100w);
     }
     .contact-with-us-register{
-        margin: 0 0 40px 0;
+        margin-bottom: 50px;
     }
-    .contact-with-us-register>form>label>input{
-        font-size: 25px;
-        margin-bottom: 30px;
+    .contact-with-us-register>form{
+        width: calc(100vw/2);
     }
-    .contact-with-us-register>form>textarea{
-        font-size: 25px;
+    .contact-with-us-register{
+        margin-right: 0;
     }
-    .contact-with-us-register>form>a{
-        font-size: 25px;
-    }
-    .contact-with-us-register>form>button{
-        font-size: 25px;
-        width: 250px;
-        padding: 10px 40px;
-    }
-    .contact-with-us{
+    .contact-with-us-register>form>.name-surname-input{
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
     }
-    .contact-with-us-details>div>p{
-        font-size: 30px;
-    }
-    .contact-with-us-details>div>a>svg{
-        width: 80px;
-        height: 80px;
-    }
-    .name-surname-input>input{
+    .contact-with-us-register>form>.name-surname-input>input{
         width: 100%;
-        margin-bottom: 30px;
     }
-    .name-surname-input>input:last-child{
-        margin-bottom: 15px;
+    .contact-with-us-register>form>.name-surname-input>input:first-child{
+        margin-bottom: 20px;
+    }
+    .footer-main{
+        flex-wrap: wrap;
+    }
+    .footer-main>div{
+        margin-bottom: 30px;
+        margin-right: 20px;
     }
 }
