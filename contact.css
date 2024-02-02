@@ -10,6 +10,10 @@
 font-family: 'Roboto', sans-serif; for-roboto */
 header {
     font-family: 'Roboto';
+    position: sticky;
+    top: 0;
+    transition: bottom .3s ease;
+    z-index: 1000;
 }
 
 header>.contact-nav-main {
@@ -21,16 +25,18 @@ header>.contact-nav-main {
     color: white;
 }
 
-.contact-nav-pages{
+.contact-nav-pages {
     display: flex;
     align-items: center;
 }
-.contact-nav-pages>i{
+
+.contact-nav-pages>i {
     height: 37px;
     display: flex;
     align-items: flex-end;
     display: none;
 }
+
 .contact-nav-main>.contact-nav-pages>ul {
     display: flex;
     align-items: flex-end;
@@ -93,6 +99,7 @@ header>.contact-nav-main {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
+    background-color: #FFF;
 }
 
 .contact-nav-secondary-logo-search-box {
@@ -166,6 +173,7 @@ header>.contact-nav-main {
     padding: 10px 20px;
     margin-right: 30px;
     position: relative;
+    z-index: 1001;
     /* transition: .3s ease-in-out; */
 }
 
@@ -749,99 +757,145 @@ footer>.footer-codeart-logo {
     margin-right: 25px;
     color: rgba(255, 255, 255, 0.20);
 }
+
 @media screen and (max-width : 1400px) {
-    .additional-questions-text{
+    .additional-questions-text {
         margin-right: 20px;
     }
-    .contact-course-cards{
+
+    .contact-course-cards {
         flex-wrap: wrap;
         justify-content: space-between;
         align-items: center;
     }
-    .contact-course-cards>div{
+
+    .contact-course-cards>div {
         justify-content: center;
         margin-bottom: 40px;
     }
 }
-@media (max-width : 1100px){
-    .contact-nav-secondary-logo-search-box{
+
+@media (max-width : 1100px) {
+    .contact-nav-secondary-logo-search-box {
         display: flex;
         flex-direction: column;
     }
-    .contact-nav-secondary-logo-search-box>.logo{
+
+    .contact-nav-secondary-logo-search-box>.logo {
         margin-bottom: 30px;
     }
-    .contact-nav-secondary{
+
+    .contact-nav-secondary {
         display: flex;
         justify-content: center;
     }
-    .contact-search-box{
+
+    .contact-search-box {
         margin: 0;
     }
-    .contact-course-cards{
+
+    .contact-course-cards {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-    .logo>a>svg{
+
+    .logo>a>svg {
         width: 80px;
         height: 80px;
     }
-    .contact-nav-secondary>.contact-nav-secondary-buttons{
+
+    .contact-nav-secondary>.contact-nav-secondary-buttons {
         display: none;
     }
-    .additional-questions{
+
+    .additional-questions {
         flex-wrap: wrap;
         display: flex;
         justify-content: center;
         align-items: center;
     }
-    .additional-questions-text{
+
+    .additional-questions-text {
         margin-bottom: 40px;
         margin-right: 0;
     }
-    .contact-nav-main>.contact-nav-pages>ul{
+
+    .contact-nav-main>.contact-nav-pages>ul {
         display: none;
     }
-    .contact-nav-pages>i{
+
+    .contact-nav-pages>i {
         display: flex;
         font-size: 20px;
     }
-    .cotact-with-us{
+
+    .cotact-with-us {
         display: flex;
         justify-content: center;
         align-items: center;
         transform: translateX(-50%, -50%);
     }
-    .contact-with-us-form{
+
+    .contact-with-us-form {
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .contact-with-us-register{
+
+    .contact-with-us-register {
         margin-bottom: 50px;
     }
-    .contact-with-us-register>form{
+
+    .contact-with-us-register>form {
         width: calc(100vw/2);
     }
-    .contact-with-us-register{
+
+    .contact-with-us-register {
         margin-right: 0;
     }
-    .contact-with-us-register>form>.name-surname-input{
+
+    .contact-with-us-register>form>.name-surname-input {
         display: flex;
         flex-direction: column;
     }
-    .contact-with-us-register>form>.name-surname-input>input{
+
+    .contact-with-us-register>form>.name-surname-input>input {
         width: 100%;
     }
-    .contact-with-us-register>form>.name-surname-input>input:first-child{
+
+    .contact-with-us-register>form>.name-surname-input>input:first-child {
         margin-bottom: 20px;
     }
-    .footer-main{
+
+    .footer-main {
         flex-wrap: wrap;
     }
-    .footer-main>div{
+
+    .footer-main>div {
         margin-bottom: 30px;
         margin-right: 20px;
     }
+}
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    /* box-shadow: inset 0 0 2px rgb(218, 218, 218); */
+    border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(219, 219, 219);
+    border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(208, 208, 208);
 }
