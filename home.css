@@ -268,7 +268,9 @@ footer>.footer-codeart-logo {
     display: flex;
     align-items: center;
 }
-
+.footer-social-media-logoes>div{
+    transition: .3s ease;
+}
 .footer-social-media-logoes>div:not(.footer-linkedln) {
     border: 1px solid #31385A;
     background-color: #31385A;
@@ -277,6 +279,10 @@ footer>.footer-codeart-logo {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.footer-social-media-logoes>div:hover{
+    background-color: #3B8AC9;
+    cursor: pointer;
 }
 .footer-linkedln{
     border: 1px solid rgba(59, 138, 201, 1);
@@ -312,6 +318,10 @@ footer>.footer-codeart-logo {
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
+    transition: .3s ease;
+}
+.footer-main-top-catagories>ul>li>a:hover{
+    color:#3B8AC9;
 }
 
 .footer-quick-links>h2 {
@@ -335,8 +345,11 @@ footer>.footer-codeart-logo {
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
+    transition: .3s ease;
 }
-
+.footer-quick-links>ul>li>a:hover{
+    color: #3B8AC9;
+}
 .news {
     border-bottom: 2px solid #3B8AC9;
 }
@@ -368,6 +381,10 @@ footer>.footer-codeart-logo {
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
+    transition: .3s ease;
+}
+.footer-support>ul>li>a:hover{
+    color: #3B8AC9;
 }
 .footer-app>h2{
     color: white;

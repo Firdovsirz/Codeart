@@ -265,9 +265,23 @@ main>.contact-part>.contact-heading {
 
 .contact-course-cards {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
     padding: 70px 130px;
+    width: 100%;
+    position: relative;
 }
+
+.contact-course-cards>ul.carousel {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.contact-course-cards>ul.carousel>li {
+    list-style-type: none;
+}
+
 
 .design-card {
     background-image: url(./assets/design-card.jpeg);
@@ -493,15 +507,76 @@ main>.contact-part>.contact-heading {
     width: 177px;
     background-color: #3B8AC9;
     border: 1px solid #3B8AC9;
+    border: none;
     padding: 10px;
     color: white;
     font-family: 'Nunito Sans';
     font-size: 16px;
     font-weight: 400;
+    position: relative;
+    transition: .2s;
 }
-
+.contact-with-us-register>form>button>span{
+    position: absolute;
+    display: block;
+    background: #3B8AC9;
+}
+.contact-with-us-register>form>button>span:first-child{
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: left;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+.contact-with-us-register>form>button>span:nth-child(2){
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    transform-origin: top;
+    transform: scaleY(0);
+    transition: transform .3s;
+}
+.contact-with-us-register>form>button>span:nth-child(3){
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+.contact-with-us-register>form>button>span:nth-child(4){
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform-origin: bottom;
+    transform: scaleY(0);
+    transition: transform .3s;
+}
+.contact-with-us-register>form>button:hover .top-border{
+    transform: scaleX(1);
+    transition-delay: .1s;
+}
+.contact-with-us-register>form>button:hover .right-border{
+    transform: scaleY(1);
+    transition-delay: .2s;
+}
+.contact-with-us-register>form>button:hover .bottom-border{
+    transform: scaleX(1);
+    transition-delay: .3s;
+}
+.contact-with-us-register>form>button:hover .left-border{
+    transform: scaleY(1);
+    transition-delay: .4s;
+}
 .contact-with-us-register>form>button:hover {
     cursor: pointer;
+    background: transparent;
+    color: #3B8AC9;
 }
 
 .contact-with-us-details {
@@ -778,11 +853,9 @@ footer>.footer-codeart-logo {
 @media (max-width : 1100px) {
     .contact-nav-secondary-logo-search-box {
         display: flex;
-        flex-direction: column;
-    }
-
-    .contact-nav-secondary-logo-search-box>.logo {
-        margin-bottom: 30px;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
     }
 
     .contact-nav-secondary {
@@ -800,14 +873,72 @@ footer>.footer-codeart-logo {
         align-items: center;
     }
 
+    .contact-course-cards>i {
+        height: 20px;
+        width: 20px;
+        background-color: white;
+        text-align: center;
+        line-height: 50px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 30px;
+    }
+
+    .carousel.dragging .card {
+        user-select: none;
+        cursor: grab;
+        scroll-snap-type: none;
+        scroll-behavior: auto;
+    }
+
+    .contact-course-cards>i:first-child {
+        left: 100px;
+    }
+
+    .contact-course-cards>i:last-child {
+        right: 100px;
+    }
+
+    .contact-course-cards>ul.carousel {
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-columns: calc((100%/2)-12px);
+        gap: 16px;
+        overflow: hidden;
+        scroll-behavior: smooth;
+    }
+
+    .contact-course-cards>ul.carousel>li {
+        list-style-type: none;
+        display: flex;
+        padding-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .logo>a>svg {
+        margin: 0;
+        align-items: flex-end;
+    }
+
     .logo>a>svg {
         width: 80px;
         height: 80px;
     }
 
+    .logo>a>svg:last-child {
+        width: 90px;
+        height: 90px;
+    }
+
     .contact-nav-secondary>.contact-nav-secondary-buttons {
         display: none;
     }
+
 
     .additional-questions {
         flex-wrap: wrap;
@@ -823,6 +954,10 @@ footer>.footer-codeart-logo {
 
     .contact-nav-main>.contact-nav-pages>ul {
         display: none;
+    }
+
+    main>.contact-part {
+        height: 95px;
     }
 
     .contact-nav-pages>i {
