@@ -271,6 +271,9 @@ main>.contact-part>.contact-heading {
     width: 100%;
     position: relative;
 }
+.contact-course-cards>i{
+    display: none;
+}
 
 .contact-course-cards>ul.carousel {
     display: flex;
@@ -885,6 +888,7 @@ footer>.footer-codeart-logo {
         top: 50%;
         transform: translateY(-50%);
         font-size: 30px;
+        display: block;
     }
 
     .carousel.dragging .card {
