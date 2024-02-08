@@ -22,11 +22,11 @@ const dragStop = () => {
     isDragging = false;
     carousel.classList.remove('dragging');
 }
-const infiniteScroll = ()=>{
-    if(carousel.scrollLeft === 0){
-        carousel.scrollLeft = carousel.scrollWidth - (2*carousel.offsetWidth);
+const infiniteScroll = () => {
+    if (carousel.scrollLeft === 0) {
+        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
         console.log('u reach right end');
-    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth){
+    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
         carousel.scrollLeft = carousel.offsetWidth;
         console.log('u reach left end');
     }

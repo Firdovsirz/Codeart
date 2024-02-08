@@ -223,6 +223,213 @@ main>.main-top-start-learn>button:hover {
     cursor: pointer;
 }
 
+main>.home-start-course-now {
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-around;
+    margin: 100px auto;
+    background-color: #3B8AC9;
+    width: calc(100vw - 300px);
+    padding: 20px;
+}
+
+main>.home-start-course-now>article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+main>.home-start-course-now>article>button {
+    font-family: 'Roboto';
+    padding: 15px;
+    width: 180px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: #3B8AC9;
+}
+
+main>.home-start-course-now>article>h2 {
+    margin-bottom: 20px;
+}
+
+main>.home-start-course-now>article>p {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+main>.advantages {
+    font-family: 'Roboto';
+    margin: 100px auto;
+    width: calc(100vw - 300px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main>.advantages>h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+}
+
+main>.advantages>article {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 200px;
+    border: 1px solid transparent;
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+}
+
+main>.advantages>article>*>div {
+    display: flex;
+    align-items: center;
+}
+
+main>.advantages>article>*>div>p:first-child {
+    font-size: 140px;
+    color: #65C2CB;
+    font-weight: bold;
+    margin-right: 30px;
+}
+
+main>.advantages>article>*>div>p:last-child {
+    font-size: 24px;
+}
+
+main>.home-teachers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: calc(100vw - 300px);
+    margin: 50px auto;
+    font-family: 'Roboto';
+}
+
+main>.home-teachers>h1 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+main>.home-teachers>.home-teachers-cards {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim {
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100vw - 300px)/3 - 20px);
+    text-align: center;
+    background-color: #3B8AC9;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim>.home-teachers-karim-img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim>.home-teachers-karim-text {
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim>.home-teachers-karim-text>h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim>.home-teachers-karim-text>p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-karim>.home-teachers-karim-text>p:last-child {
+    font-size: 24px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100vw - 300px)/3 - 20px);
+    text-align: center;
+    background-color: #1B213F;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid>.home-teachers-djavid-img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid>.home-teachers-djavid-text {
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid>.home-teachers-djavid-text>h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid>.home-teachers-djavid-text>p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-djavid>.home-teachers-djavid-text>p:last-child {
+    font-size: 24px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan {
+    border: 1px solid transparent;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc((100vw - 300px)/3 - 20px);
+    text-align: center;
+    background-color: #65C2CB;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan>.home-teachers-turan-img {
+    margin-top: 20px;
+    width: 100%;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan>.home-teachers-turan-text {
+    background-color: white;
+    width: 100%;
+    margin-top: 0;
+    padding: 10px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan>.home-teachers-turan-text>h2 {
+    margin-bottom: 10px;
+    font-size: 36px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan>.home-teachers-turan-text>p {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+main>.home-teachers>.home-teachers-cards>.home-teachers-turan>.home-teachers-turan-text>p:last-child {
+    font-size: 24px;
+}
+
 footer {
     background-color: #1B213F;
     padding: 100px 0 0 0;
@@ -268,9 +475,11 @@ footer>.footer-codeart-logo {
     display: flex;
     align-items: center;
 }
-.footer-social-media-logoes>div{
+
+.footer-social-media-logoes>div {
     transition: .3s ease;
 }
+
 .footer-social-media-logoes>div:not(.footer-linkedln) {
     border: 1px solid #31385A;
     background-color: #31385A;
@@ -280,11 +489,13 @@ footer>.footer-codeart-logo {
     justify-content: center;
     align-items: center;
 }
-.footer-social-media-logoes>div:hover{
+
+.footer-social-media-logoes>div:hover {
     background-color: #3B8AC9;
     cursor: pointer;
 }
-.footer-linkedln{
+
+.footer-linkedln {
     border: 1px solid rgba(59, 138, 201, 1);
     background-color: rgba(59, 138, 201, 1);
     width: 40px;
@@ -293,6 +504,7 @@ footer>.footer-codeart-logo {
     justify-content: center;
     align-items: center;
 }
+
 .footer-social-media-logoes>div:not(:last-child) {
     margin-right: 20px;
 }
@@ -320,8 +532,9 @@ footer>.footer-codeart-logo {
     font-size: 13px;
     transition: .3s ease;
 }
-.footer-main-top-catagories>ul>li>a:hover{
-    color:#3B8AC9;
+
+.footer-main-top-catagories>ul>li>a:hover {
+    color: #3B8AC9;
 }
 
 .footer-quick-links>h2 {
@@ -347,9 +560,11 @@ footer>.footer-codeart-logo {
     font-size: 13px;
     transition: .3s ease;
 }
-.footer-quick-links>ul>li>a:hover{
+
+.footer-quick-links>ul>li>a:hover {
     color: #3B8AC9;
 }
+
 .news {
     border-bottom: 2px solid #3B8AC9;
 }
@@ -383,16 +598,19 @@ footer>.footer-codeart-logo {
     font-size: 13px;
     transition: .3s ease;
 }
-.footer-support>ul>li>a:hover{
+
+.footer-support>ul>li>a:hover {
     color: #3B8AC9;
 }
-.footer-app>h2{
+
+.footer-app>h2 {
     color: white;
     font-family: 'Nunito Sans';
     font-size: 16px;
     margin-bottom: 20px;
 }
-.footer-app-for-app-store{
+
+.footer-app-for-app-store {
     display: flex;
     align-items: center;
     margin-bottom: 20px;
@@ -400,35 +618,41 @@ footer>.footer-codeart-logo {
     background-color: #31385A;
     padding: 5px;
 }
-.app-store-logo{
+
+.app-store-logo {
     margin-right: 10px;
     width: 40px;
     height: 40px;
 }
-.app-store-text{
+
+.app-store-text {
     color: white;
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
 }
-.footer-app-for-play-store{
+
+.footer-app-for-play-store {
     display: flex;
     align-items: center;
     border: 1px solid #31385A;
     background-color: #31385A;
     padding: 5px 5px 5px 12px;
 }
-.play-store-logo{
+
+.play-store-logo {
     margin-right: 10px;
     height: 32px;
     width: 34px;
 }
-.play-store-text{
+
+.play-store-text {
     color: white;
     font-family: 'Nunito Sans';
     font-weight: 400;
     font-size: 13px;
 }
+
 .laws {
     border-top: 1px solid rgba(255, 255, 255, 0.20);
     display: flex;
