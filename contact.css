@@ -275,16 +275,11 @@ main>.contact-part>.contact-heading {
     display: none;
 }
 
-.contact-course-cards>ul.carousel {
+.contact-course-cards>.carousel {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
-
-.contact-course-cards>ul.carousel>li {
-    list-style-type: none;
-}
-
 
 .design-card {
     background-image: url(./assets/design-card.jpeg);
@@ -874,56 +869,38 @@ footer>.footer-codeart-logo {
         display: flex;
         flex-direction: column;
         align-items: center;
+        position: relative;
+        justify-content: space-between;
     }
-
-    .contact-course-cards>i {
-        height: 20px;
-        width: 20px;
-        background-color: white;
-        text-align: center;
-        line-height: 50px;
+    main>.contact-course-cards>i{
+        padding: 10px 16px;
         border-radius: 50%;
-        cursor: pointer;
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
+        background-color: #3B8AC9;
+        color: white;
         font-size: 30px;
         display: block;
     }
-
-    .carousel.dragging .card {
-        user-select: none;
-        cursor: grab;
-        scroll-snap-type: none;
-        scroll-behavior: auto;
-    }
-
-    .contact-course-cards>i:first-child {
+    main>.contact-course-cards>i:first-child{
+        position: absolute;
         left: 100px;
+        top: 200px;
+        z-index: 10;
     }
-
-    .contact-course-cards>i:last-child {
+    main>.contact-course-cards>i:last-child{
+        position: absolute;
         right: 100px;
+        top: 200px;
+        z-index: 10;
     }
-
-    .contact-course-cards>ul.carousel {
-        display: grid;
-        grid-auto-flow: column;
-        grid-template-columns: calc((100%/2)-12px);
-        gap: 16px;
+    main>.contact-course-cards>.carousel{
+        max-width: 1000px;
+        min-width: 300px;
         overflow: hidden;
-        scroll-behavior: smooth;
+        white-space: nowrap;
     }
-
-    .contact-course-cards>ul.carousel>li {
-        list-style-type: none;
-        display: flex;
-        padding-bottom: 15px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+    main>.contact-course-cards>.carousel>div{
+        margin-right: 30px;
     }
-
     .logo>a>svg {
         margin: 0;
         align-items: flex-end;

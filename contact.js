@@ -1,37 +1,26 @@
-let carousel = document.querySelector('.carousel');
-let isDragging = false, startX, startScrollLeft;
-const arrowBtns = document.querySelectorAll('.contact-course-cards i');
-const firstCardWidth = carousel.querySelector('.card').offsetWidth;
-arrowBtns.forEach((btn) => {
-    btn.addEventListener('click', () => {
-        carousel.scrollLeft += btn.id === 'left' ? -firstCardWidth : firstCardWidth;
-    });
+const carousel = document.querySelector('.carousel');
+const arrowIcons = document.querySelectorAll(".contact-course-cards i");
+let isDragStart = false, prevPageX, prevScrollLeft;
+arrowIcons.forEach((icon)=>{
+    icon.addEventListener("click", ()=>{
+        console.log(icon);
+    })
 })
 const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
+    isDragStart = true;
+    prevPageX = e.pageX;
+    prevScrollLeft = carousel.scrollLeft;
 }
 const dragging = (e) => {
-    if (!isDragging) return;
-
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+    if (!isDragStart) return;
+    carousel.scrollLeft = e.pageX;
+    e.preventDefault();
+    let positionDiff = e.pageX - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
 const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove('dragging');
+    isDragStart = false;
 }
-const infiniteScroll = () => {
-    if (carousel.scrollLeft === 0) {
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        console.log('u reach right end');
-    } else if (Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.scrollLeft = carousel.offsetWidth;
-        console.log('u reach left end');
-    }
-}
-carousel.addEventListener('mousedown', dragStart);
+carousel.addEventListener('mousemdown', dragStart)
 carousel.addEventListener('mousemove', dragging);
-document.addEventListener('mouseup', dragStop);
-carousel.addEventListener('scroll', infiniteScroll);
+carousel.addEventListener('mouseup', dragStop);
