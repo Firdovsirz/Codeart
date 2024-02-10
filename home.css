@@ -223,6 +223,105 @@ main>.main-top-start-learn>button:hover {
     cursor: pointer;
 }
 
+main>.the-most-demanding-courses {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid transparent;
+    width: calc(100vw - 300px);
+    margin: 50px auto;
+    font-family: 'Nunito Sans';
+
+}
+
+main>.the-most-demanding-courses>div:first-child {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+main>.the-most-demanding-courses>div:first-child>.interior-design {
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+}
+
+main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-image>img {
+    width: 350px;
+    height: fit-content;
+}
+
+main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text {
+    padding: 10px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text>p:first-child {
+    background-color: #65C2CB;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text>p:last-child {
+    font-size: 18px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.grapich-design {
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    width: fit-content;
+}
+
+main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-image>img {
+    width: 350px;
+    height: fit-content;
+}
+
+main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text {
+    padding: 10px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text>p:first-child {
+    background-color: #65C2CB;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text>p:last-child {
+    font-size: 18px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text {
+    padding: 10px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text>p:first-child {
+    background-color: #65C2CB;
+    width: fit-content;
+    padding: 8px;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text>p:last-child {
+    font-size: 18px;
+}
+
+main>.the-most-demanding-courses>div:first-child>.back-end {
+    box-shadow: 2px 2px 10px rgb(199, 199, 199);
+    width: fit-content;
+}
+
+main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-image>img {
+    width: 350px;
+    height: fit-content;
+}
+
 main>.home-start-course-now {
     font-family: 'Roboto';
     display: flex;
