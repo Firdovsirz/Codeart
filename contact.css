@@ -114,19 +114,19 @@ header>.contact-nav-main {
     align-items: center;
 }
 
-.logo>a>svg:last-child {
+.logo>a>img:last-child {
     margin-left: 10px;
 }
 
-.logo>svg:first-child {
+.logo>a>img:first-child {
     margin-right: 6.64px;
-    height: 40px;
-    width: 50px;
+    height: 51px;
+    width: 70px;
 }
 
-.logo>svg:last-child {
-    width: 57px;
-    height: 23px;
+.logo>a>img:last-child {
+    width: 70px;
+    height: 40px;
 }
 
 .contact-search-box {
@@ -159,7 +159,7 @@ header>.contact-nav-main {
     align-items: center;
 }
 
-.contact-nav-secondary>.contact-nav-secondary-buttons>svg {
+.contact-nav-secondary>.contact-nav-secondary-buttons>img {
     margin-right: 30px;
     height: 19px;
 }
@@ -622,13 +622,14 @@ footer>.footer-codeart-logo {
     height: 41px;
 }
 
-.footer-logo>svg:first-child {
-    height: 41px;
+.footer-logo>img:first-child {
+    height: 51px;
     margin-right: 5px;
 }
 
-.footer-logo>svg:last-child {
-    height: 24px;
+.footer-logo>img:last-child {
+    height: 34px;
+    margin-left: 5px;
 }
 
 .footer-logo {
