@@ -17,7 +17,7 @@ const dragging = (e) => {
     if (!isDragStart) return;
     carousel.scrollLeft = e.pageX;
     e.preventDefault();
-    // carousel.classList.add("dragging");
+    carousel.classList.add("dragging");
     let positionDiff = e.pageX - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
@@ -28,3 +28,17 @@ const dragStop = () => {
 carousel.addEventListener('mousemdown', dragStart)
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener('mouseup', dragStop);
+
+
+// toggle-menu
+let openMenu = document.getElementById('menuBar');
+let menu = document.querySelector('.menu');
+let closeMenu = document.getElementById('closeMenu');
+openMenu.addEventListener("click", () => {
+    menu.style.display = 'block';
+});
+
+closeMenu.addEventListener("click", () => {
+    menu.style.display = 'none';
+    openMenu.style.display = 'flex';
+});
