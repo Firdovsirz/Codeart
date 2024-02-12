@@ -226,33 +226,37 @@ main>.main-top-start-learn>button:hover {
 main>.the-most-demanding-courses {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     border: 1px solid transparent;
     width: calc(100vw - 300px);
     margin: 50px auto;
     font-family: 'Nunito Sans';
-
+}
+main>.the-most-demanding-courses>h1{
+    margin: 30px auto;
+    font-size: 30px;
 }
 
-main>.the-most-demanding-courses>div:first-child {
+main>.the-most-demanding-courses>div>div:first-child {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-main>.the-most-demanding-courses>div:first-child>.interior-design {
+main>.the-most-demanding-courses>div>div:first-child>.interior-design {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
 }
 
-main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-image>img {
+main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text {
+main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text>p:first-child {
+main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -262,25 +266,25 @@ main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-desi
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.interior-design>.interior-design-text>p:last-child {
+main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.grapich-design {
+main>.the-most-demanding-courses>div>div:first-child>.grapich-design {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
     width: fit-content;
 }
 
-main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-image>img {
+main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text {
+main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text>p:first-child {
+main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -290,15 +294,15 @@ main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.grapich-design>.grapich-design-text>p:last-child {
+main>.the-most-demanding-courses>div>div>div:first-child>.grapich-design>.grapich-design-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text {
+main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text>p:first-child {
+main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -308,41 +312,41 @@ main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text>p:firs
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-text>p:last-child {
+main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:first-child>.back-end {
+main>.the-most-demanding-courses>div>div:first-child>.back-end {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
     width: fit-content;
 }
 
-main>.the-most-demanding-courses>div:first-child>.back-end>.back-end-image>img {
+main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:last-child {
+main>.the-most-demanding-courses>div>div:last-child {
     display: flex;
     width: 100%;
     justify-content: space-between;
     margin-top: 30px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.ui-ux-design {
+main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
 }
 
-main>.the-most-demanding-courses>div:last-child>.ui-ux-design>.ui-ux-design-image>img {
+main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:last-child>.ui-ux-design>.ui-ux-design-text {
+main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.ui-ux-design>.ui-ux-design-text>p:first-child {
+main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -352,24 +356,24 @@ main>.the-most-demanding-courses>div:last-child>.ui-ux-design>.ui-ux-design-text
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-text>p:last-child {
+main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end {
+main>.the-most-demanding-courses>div>div:last-child>.front-end {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-image>img {
+main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-text {
+main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-text>p:first-child {
+main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -379,28 +383,28 @@ main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-text>p:fir
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
     font-size: 18px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design {
     box-shadow: 2px 2px 10px rgb(199, 199, 199);
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-design-image>img {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-image>img {
     width: 350px;
     height: fit-content;
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-design-text {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-design-text>p:first-child {
+main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:first-child {
     background-color: #65C2CB;
     width: fit-content;
     padding: 8px;
@@ -410,7 +414,7 @@ main>.the-most-demanding-courses>div:last-child>.exterior-design>.exterior-desig
     font-size: 17px;
 }
 
-main>.the-most-demanding-courses>div:last-child>.front-end>.front-end-text>p:last-child {
+main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:last-child {
     font-size: 18px;
 }
 
@@ -892,4 +896,9 @@ footer>.footer-codeart-logo {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(208, 208, 208);
+}
+@media (max-width: 1400px){
+    .the-most-demanding-courses>div>div{
+        flex-wrap: wrap;
+    }
 }
