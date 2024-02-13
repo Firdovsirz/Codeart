@@ -36,9 +36,6 @@
                 <button class="menu-create-account-btn">Hesab yarat</button>
                 <button class="menu-login-btn">Daxil ol</button>
             </div>
-            <div class="menu-laws">
-                <p><span>&#9400;</span> 2023 Bütün hüquqlar qorunur</p>
-            </div>
         </div>
         <nav class="contact-nav-main">
             <div class="contact-nav-pages">
@@ -55,7 +52,15 @@
             </div>
             <div class="contact-nav-curr-lang">
                 <div class="contact-nav-currency">
-                    <p>AZN</p>
+                    <p id="displayCurr">AZN</p>
+                    <div class="contact-change-currency" id="currList">
+                        <div class="azn">
+                            <p>AZN</p>
+                        </div>
+                        <div class="usd">
+                            <p>USD</p>
+                        </div>
+                    </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none"
                         id="currency">
                         <path d="M8.5 0.625L4.75 4.375L1 0.625" stroke="white" stroke-linecap="round"
@@ -63,7 +68,15 @@
                     </svg>
                 </div>
                 <div class="language">
-                    <p>Azərbaycan dili</p>
+                    <p id="displayLang">Azərbaycan dili</p>
+                    <div class="contact-change-language" id="langList">
+                        <div class="aze">
+                            <p>Azərbaycan dili</p>
+                        </div>
+                        <div class="en">
+                            <p>İngilis dili</p>
+                        </div>
+                    </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none"
                         id="language">
                         <path d="M8.5 0.625L4.75 4.375L1 0.625" stroke="white" stroke-linecap="round"
@@ -119,7 +132,7 @@
             </div>
         </section>
         <section class="contact-course-cards">
-            <i id = "left" class="fa-solid fa-angle-left"></i>
+            <i id="left" class="fa-solid fa-angle-left"></i>
             <div class="carousel">
                 <div class="card">
                     <div class="design-card" data-aos="fade-right" data-aos-duration="2000">

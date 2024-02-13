@@ -42,3 +42,47 @@ closeMenu.addEventListener("click", () => {
     menu.style.display = 'none';
     openMenu.style.display = 'flex';
 });
+
+//change currency
+let currChangeButton = document.querySelector('.contact-nav-currency');
+let currList = document.getElementById('currList');
+currChangeButton.addEventListener('click', () => {
+    if (currList.style.display === "none") {
+        currList.style.display = 'block';
+    } else {
+        currList.style.display = 'none';
+    }
+});
+let langChangeButton = document.querySelector('.language');
+let langList = document.getElementById('langList');
+langChangeButton.addEventListener('click', () => {
+    if (langList.style.display === "none") {
+        langList.style.display = 'block';
+    } else {
+        langList.style.display = "none";
+    }
+});
+let changeToAzn = document.querySelector('.azn');
+let changeToUsd = document.querySelector('.usd');
+let displayCurr = document.getElementById('displayCurr');
+const setCurr = () => {
+    changeToAzn.addEventListener('click', () => {
+        displayCurr.innerHTML = 'AZN';
+    });
+    changeToUsd.addEventListener('click', () => {
+        displayCurr.innerText = 'USD';
+    })
+}
+setCurr();
+let changeToAze = document.querySelector('.aze');
+let changeToEn = document.querySelector('.en');
+let displayLang = document.getElementById('displayLang');
+const setLang = () => {
+    changeToAze.addEventListener('click', () => {
+        displayLang.innerHTML = 'Azərbaycan dili';
+    });
+    changeToEn.addEventListener('click', () => {
+        displayLang.innerHTML = 'İngilis dili';
+    });
+}
+setLang();
