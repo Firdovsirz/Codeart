@@ -17,7 +17,7 @@ const dragging = (e) => {
     if (!isDragStart) return;
     carousel.scrollLeft = e.pageX;
     e.preventDefault();
-    carousel.classList.add("dragging");
+    // carousel.classList.add("dragging");
     let positionDiff = e.pageX - prevPageX;
     carousel.scrollLeft = prevScrollLeft - positionDiff;
 }
