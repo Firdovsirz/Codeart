@@ -10,6 +10,145 @@
 font-family: 'Roboto', sans-serif; for-roboto */
 header {
     font-family: 'Roboto';
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#menuBar {
+    display: none;
+    font-size: 20px;
+}
+
+.home-menu {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #1B213F;
+    height: 100vh;
+    color: white;
+    padding: 30px;
+    width: 300px;
+    display: none;
+    transition: left .3s ease;
+}
+
+.home-menu>i {
+    font-size: 30px;
+    position: absolute;
+    top: 15px;
+    left: 12px;
+    margin-bottom: 30px;
+}
+
+.home-menu-logo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.home-menu-logo>img:first-child {
+    margin-right: 20px;
+    width: 60px;
+    height: 70px;
+}
+
+.home-menu-logo>img:last-child {
+    width: 80px;
+}
+
+.home-menu-pages {
+    margin-bottom: 50px;
+}
+
+.home-menu-pages>ul>li {
+    list-style-type: none;
+}
+
+.home-menu-pages>ul>li>a {
+    color: white;
+    text-decoration: none;
+    position: relative;
+    font-size: 20px;
+}
+
+.home-menu-pages>ul>li>a:after {
+    content: "";
+    width: 0;
+    height: 0.06cm;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    background-color: #3B8AC9;
+    border-radius: 2px;
+    transition: .3s ease;
+}
+
+.home-menu-pages>ul>li>a:hover:after {
+    width: 100%;
+}
+
+.home-menu-pages>ul>li>a:hover {
+    color: #3B8AC9;
+}
+
+.home-menu-pages>ul>li:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+.home-menu-buttons {
+    display: flex;
+    flex-direction: column;
+}
+
+.home-menu-buttons>button:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+.home-menu-buttons>.home-menu-create-account-btn {
+    border: 2px solid #3B8AC9;
+    color: #3B8AC9;
+    background: transparent;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 20px;
+    margin-right: 30px;
+    background-color: transparent;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+
+.home-menu-buttons>.home-menu-create-account-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 40px;
+    background-color: #3B8AC9;
+    z-index: -1;
+    transition: .5s ease;
+}
+
+.home-menu-buttons>.home-menu-create-account-btn:hover:after {
+    width: 100%;
+}
+
+.home-menu-buttons>.home-menu-create-account-btn:hover {
+    cursor: pointer;
+}
+
+.home-menu-buttons>.home-menu-login-btn {
+    padding: 10px 20px;
+    background-color: #3B8AC9;
+    border: 1px solid #3B8AC9;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
 }
 
 header>.nav-main {
@@ -20,7 +159,10 @@ header>.nav-main {
     background: var(--dark-blue, #1B213F);
     color: white;
 }
-
+header>.nav-pages>i{
+    font-size: 30px;
+    color: white;
+}
 .nav-main>.nav-pages>ul {
     display: flex;
     align-items: flex-end;
@@ -83,6 +225,7 @@ header>.nav-main {
     display: flex;
     justify-content: space-between;
     padding: 20px 20px;
+    background-color: white;
 }
 
 .nav-secondary-logo-search-box {
@@ -232,7 +375,8 @@ main>.the-most-demanding-courses {
     margin: 50px auto;
     font-family: 'Nunito Sans';
 }
-main>.the-most-demanding-courses>h1{
+
+main>.the-most-demanding-courses>h1 {
     margin: 30px auto;
     font-size: 30px;
 }
@@ -897,8 +1041,34 @@ footer>.footer-codeart-logo {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(208, 208, 208);
 }
-@media (max-width: 1400px){
-    .the-most-demanding-courses>div>div{
+
+@media (max-width: 1400px) {
+    .the-most-demanding-courses>div>div {
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1100px) {
+    .nav-main>.nav-pages>ul{
+        display: none;
+    }
+    #menuBar{
+        display: block;
+        padding-top: 20px;
+    }
+    .nav-secondary>.nav-secondary-buttons{
+        display: none;
+    }
+    .nav-secondary-logo-search-box{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .advantages{
+        display: flex;
+        justify-content: space-between;
+    }
+    main>.advantages>article{
+        padding: 20px 50px;
     }
 }
