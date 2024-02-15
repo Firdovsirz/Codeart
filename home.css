@@ -12,7 +12,7 @@ header {
     font-family: 'Roboto';
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 10;
 }
 
 #menuBar {
@@ -84,6 +84,7 @@ header {
     background-color: #3B8AC9;
     border-radius: 2px;
     transition: .3s ease;
+
 }
 
 .home-menu-pages>ul>li>a:hover:after {
@@ -119,6 +120,7 @@ header {
     width: 100%;
     position: relative;
     color: white;
+    z-index: 1001;
 }
 
 .home-menu-buttons>.home-menu-create-account-btn:after {
@@ -129,8 +131,8 @@ header {
     width: 0;
     height: 40px;
     background-color: #3B8AC9;
-    z-index: -1;
     transition: .5s ease;
+    z-index: -1;
 }
 
 .home-menu-buttons>.home-menu-create-account-btn:hover:after {
@@ -159,10 +161,12 @@ header>.nav-main {
     background: var(--dark-blue, #1B213F);
     color: white;
 }
-header>.nav-pages>i{
+
+header>.nav-pages>i {
     font-size: 30px;
     color: white;
 }
+
 .nav-main>.nav-pages>ul {
     display: flex;
     align-items: flex-end;
@@ -217,8 +221,63 @@ header>.nav-pages>i{
     margin-right: 30px;
 }
 
-.nav-main>.nav-curr-lang *>p {
-    margin-right: 5px;
+.nav-currency {
+    position: relative;
+}
+
+.nav-currency>.home-change-currency {
+    position: absolute;
+    top: 25px;
+    color: black;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    z-index: 11;
+    display: none;
+}
+
+.nav-currency>.home-change-currency>div {
+    padding: 5px 10px;
+}
+
+.nav-currency>.home-change-currency>div:hover {
+    cursor: pointer;
+}
+
+.nav-currency>.home-change-currency>div:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.language {
+    position: relative;
+    display: none;
+}
+
+.language>.home-change-language {
+    position: absolute;
+    top: 25px;
+    background-color: white;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 0px 0px 1px;
+    z-index: 11;
+    color: black;
+}
+
+.language>.home-change-language>div {
+    padding: 5px;
+    width: 100%;
+}
+
+.language>.home-change-language>div:hover {
+    cursor: pointer;
+}
+
+.language>.home-change-language>div:first-child {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.nav-main>.nav-curr-lang *>svg {
+    margin-left: 5px;
 }
 
 .nav-secondary {
@@ -293,6 +352,7 @@ header>.nav-pages>i{
     padding: 10px 20px;
     margin-right: 30px;
     position: relative;
+    z-index: 4;
 }
 
 .btn-create-account:after {
@@ -303,7 +363,7 @@ header>.nav-pages>i{
     width: 0;
     height: 40px;
     background-color: #3B8AC9;
-    z-index: -1;
+    z-index: 3;
     transition: .7s ease;
 }
 
@@ -330,7 +390,7 @@ main>.main-top-start-learn {
     background-image: linear-gradient(82deg, rgba(1, 0, 9, 0.85) 7.99%, rgba(0, 0, 0, 0.00) 86.13%), url(./assets/main-section-bg.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    /* background:  */
+    background-position: center;
     padding: 140px 130px;
 }
 
@@ -359,207 +419,51 @@ main>.main-top-start-learn>button {
     color: white;
     font-size: 16px;
     font-weight: 500;
-    position: relative;
 }
 
 main>.main-top-start-learn>button:hover {
     cursor: pointer;
+    background: transparent;
 }
 
 main>.the-most-demanding-courses {
+    font-family: 'Nunito Sans';
+    width: calc(100vw - 300px);
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+}
+
+main>.the-most-demanding-courses>div {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+main>.the-most-demanding-courses>div>div {
     border: 1px solid transparent;
-    width: calc(100vw - 300px);
-    margin: 50px auto;
-    font-family: 'Nunito Sans';
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    margin-block: 15px;
+    width: fit-content;
 }
 
-main>.the-most-demanding-courses>h1 {
-    margin: 30px auto;
-    font-size: 30px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child {
-    display: flex;
+main>.the-most-demanding-courses>div>div>div:first-child>img {
     width: 100%;
-    justify-content: space-between;
 }
 
-main>.the-most-demanding-courses>div>div:first-child>.interior-design {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text {
+main>.the-most-demanding-courses>div>div>div:last-child {
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text>p:first-child {
-    background-color: #65C2CB;
+main>.the-most-demanding-courses>div>div>div:last-child>p:first-child {
     width: fit-content;
-    padding: 8px;
+    background-color: rgba(101, 194, 203, 1);
+    padding: 5px 8px;
     border-radius: 5px;
     color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.interior-design>.interior-design-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.grapich-design {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-    width: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-text {
-    padding: 10px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.grapich-design>.grapich-design-text>p:first-child {
-    background-color: #65C2CB;
-    width: fit-content;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div>div:first-child>.grapich-design>.grapich-design-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text {
-    padding: 10px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text>p:first-child {
-    background-color: #65C2CB;
-    width: fit-content;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.back-end {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-    width: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:first-child>.back-end>.back-end-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:last-child {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-top: 30px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-text {
-    padding: 10px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.ui-ux-design>.ui-ux-design-text>p:first-child {
-    background-color: #65C2CB;
-    width: fit-content;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text {
-    padding: 10px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:first-child {
-    background-color: #65C2CB;
-    width: fit-content;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:last-child {
-    font-size: 18px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design {
-    box-shadow: 2px 2px 10px rgb(199, 199, 199);
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-image>img {
-    width: 350px;
-    height: fit-content;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text {
-    padding: 10px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.exterior-design>.exterior-design-text>p:first-child {
-    background-color: #65C2CB;
-    width: fit-content;
-    padding: 8px;
-    border-radius: 5px;
-    color: white;
-    margin-bottom: 20px;
-    font-size: 17px;
-}
-
-main>.the-most-demanding-courses>div>div:last-child>.front-end>.front-end-text>p:last-child {
-    font-size: 18px;
+    margin-block: 10px;
 }
 
 main>.home-start-course-now {
@@ -591,6 +495,15 @@ main>.home-start-course-now>article>button {
     color: #3B8AC9;
     background-color: white;
     border: 1px solid white;
+}
+
+main>.home-start-course-now>article>button:hover {
+    cursor: pointer;
+}
+
+main>.home-start-course-now>article>button:hover img {
+    transform: translateX(20px);
+    transition: 500ms;
 }
 
 main>.home-start-course-now>article>h2 {
@@ -1049,26 +962,31 @@ footer>.footer-codeart-logo {
 }
 
 @media (max-width: 1100px) {
-    .nav-main>.nav-pages>ul{
+    .nav-main>.nav-pages>ul {
         display: none;
     }
-    #menuBar{
+
+    #menuBar {
         display: block;
         padding-top: 20px;
     }
-    .nav-secondary>.nav-secondary-buttons{
+
+    .nav-secondary>.nav-secondary-buttons {
         display: none;
     }
-    .nav-secondary-logo-search-box{
+
+    .nav-secondary-logo-search-box {
         width: 100%;
         display: flex;
         justify-content: space-between;
     }
-    .advantages{
+
+    .advantages {
         display: flex;
         justify-content: space-between;
     }
-    main>.advantages>article{
+
+    main>.advantages>article {
         padding: 20px 50px;
     }
 }

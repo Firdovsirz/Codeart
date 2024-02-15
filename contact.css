@@ -251,10 +251,12 @@ header>.contact-nav-main {
 .contact-change-currency>div:not(:last-child) {
     border-bottom: 1px solid gray;
 }
-.contact-nav-main>.contact-nav-curr-lang>div:last-child{
+
+.contact-nav-main>.contact-nav-curr-lang>div:last-child {
     position: relative;
 }
-.contact-change-language{
+
+.contact-change-language {
     position: absolute;
     top: 25px;
     left: 15px;
@@ -266,12 +268,14 @@ header>.contact-nav-main {
     display: none;
     width: 100%;
 }
-.contact-change-language>div{
+
+.contact-change-language>div {
     padding: 2px;
     text-align: center;
     font-size: 18px;
 }
-.contact-change-language>div:not(:last-child){
+
+.contact-change-language>div:not(:last-child) {
     border-bottom: 1px solid gray;
 }
 
@@ -358,7 +362,6 @@ header>.contact-nav-main {
     margin-right: 30px;
     position: relative;
     z-index: 1001;
-    /* transition: .3s ease-in-out; */
 }
 
 .contact-btn-create-account:after {
