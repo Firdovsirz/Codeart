@@ -435,6 +435,9 @@ main>.the-most-demanding-courses {
     align-items: center;
     margin: 40px auto;
 }
+main>.the-most-demanding-courses>.carousel>i{
+    display: none;
+}
 
 main>.the-most-demanding-courses>div {
     display: flex;
@@ -989,4 +992,5 @@ footer>.footer-codeart-logo {
     main>.advantages>article {
         padding: 20px 50px;
     }
+    
 }
