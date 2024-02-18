@@ -1033,10 +1033,46 @@ footer>.footer-codeart-logo {
     header>.nav-secondary>.nav-secondary-logo-search-box>.search-box{
         display: none;
     }
+    header>.nav-secondary>.nav-secondary-logo-search-box{
+        display: flex;
+        justify-content: center;
+    }
     main>.advantages{
         display: none;
     }
     header{
         width: 100%;
+    }
+    main>.home-teachers{
+        display: none;
+    }
+    main>.main-top-start-learn{
+        background-position: center;
+        padding: 20px;
+    }
+    main>.main-top-start-learn>h1{
+        font-size: 25px;
+    }
+    main>.main-top-start-learn>p{
+        font-size: 15px;
+        width: 250px;
+    }
+    main>.the-most-demanding-courses{
+        margin: 20px auto;
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main>.the-most-demanding-courses>.carousel{
+        width: calc(100% + 200px);
+        min-width: 400px;
+    }
+    main>.home-start-course-now{
+        margin: 0;
+        width: 100%;
+    }
+    footer>.footer-main{
+        margin-right: 20px;
     }
 }
