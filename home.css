@@ -428,45 +428,51 @@ main>.main-top-start-learn>button:hover {
 
 main>.the-most-demanding-courses {
     font-family: 'Nunito Sans';
-    width: calc(100vw - 300px);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 40px auto;
+    width: calc(100vw - 300px);
+    margin: 50px auto;
 }
-main>.the-most-demanding-courses>.carousel>i{
+
+main>.the-most-demanding-courses>h1 {
+    margin-bottom: 30px;
+}
+
+main>.the-most-demanding-courses>.wrapper {
+    display: flex;
+}
+
+main>.the-most-demanding-courses>.wrapper>i {
     display: none;
 }
 
-main>.the-most-demanding-courses>div {
+main>.the-most-demanding-courses>.wrapper>.carousel {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-main>.the-most-demanding-courses>div>div {
-    border: 1px solid transparent;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-    margin-block: 15px;
-    width: fit-content;
+main>.the-most-demanding-courses>.wrapper>.carousel>div {
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 10px rgb(207, 207, 207);
 }
 
-main>.the-most-demanding-courses>div>div>div:first-child>img {
-    width: 100%;
-}
-
-main>.the-most-demanding-courses>div>div>div:last-child {
+main>.the-most-demanding-courses>.wrapper>.carousel>div>div:last-child {
+    background-color: white;
+    /* font-weight: bold; */
     padding: 10px;
 }
 
-main>.the-most-demanding-courses>div>div>div:last-child>p:first-child {
+main>.the-most-demanding-courses>.wrapper>.carousel>div>div:last-child>p:first-child {
+    border: 1px solid #65C2CB;
     width: fit-content;
-    background-color: rgba(101, 194, 203, 1);
-    padding: 5px 8px;
+    padding: 8px;
     border-radius: 5px;
     color: white;
-    margin-block: 10px;
+    background-color: #65C2CB;
+    margin-bottom: 10px;
 }
 
 main>.home-start-course-now {
@@ -575,8 +581,9 @@ main>.home-teachers>h1 {
 
 main>.home-teachers>.home-teachers-cards {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: calc(100vw - 300px);
 }
 
 main>.home-teachers>.home-teachers-cards>.home-teachers-karim {
@@ -697,8 +704,13 @@ footer {
 
 footer>.footer-main {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-evenly;
     margin-bottom: 100px;
+}
+
+footer>.footer-main>div {
+    margin-bottom: 30px;
 }
 
 footer>.footer-codeart-logo {
@@ -992,5 +1004,53 @@ footer>.footer-codeart-logo {
     main>.advantages>article {
         padding: 20px 50px;
     }
-    
+
+    main>.the-most-demanding-courses>.wrapper {
+        position: relative;
+    }
+
+    main>.the-most-demanding-courses>.wrapper i {
+        display: block;
+        border: 1px solid #3B8AC9;
+        height: fit-content;
+        padding: 12px 15px;
+        border-radius: 50%;
+        color: white;
+        background-color: #3B8AC9;
+        font-size: 20px;
+    }
+
+    main>.the-most-demanding-courses>.wrapper i:first-child {
+        position: absolute;
+        left: -25px;
+        top: calc(50% - 40px);
+        display: none;
+    }
+
+    main>.the-most-demanding-courses>.wrapper i:last-child {
+        position: absolute;
+        right: -25px;
+        top: calc(50% - 40px);
+        /* display: none; */
+    }
+
+    main>.the-most-demanding-courses>.wrapper>.carousel>div:not(:last-child) {
+        margin-right: 20px;
+    }
+
+    main>.the-most-demanding-courses>.wrapper>.carousel {
+        max-width: calc(100vw - 300px);
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        cursor: pointer;
+        overflow: hidden;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+
+    main>.the-most-demanding-courses>.wrapper>.carousel.dragging {
+        cursor: grab;
+        scroll-behavior: auto;
+    }
 }

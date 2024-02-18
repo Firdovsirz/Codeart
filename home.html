@@ -54,8 +54,12 @@
                 <div class="nav-currency">
                     <p id="displayCurr">AZN</p>
                     <div class="home-change-currency" id="homeCurrList">
-                        <div class="home-azn"><p>AZN</p></div>
-                        <div class="home-usd"><p>USD</p></div>
+                        <div class="home-azn">
+                            <p>AZN</p>
+                        </div>
+                        <div class="home-usd">
+                            <p>USD</p>
+                        </div>
                     </div>
                     <svg xmlns="http://www.w3.org/2000/svg" width="9" height="5" viewBox="0 0 9 5" fill="none">
                         <path d="M8.5 0.625L4.75 4.375L1 0.625" stroke="white" stroke-linecap="round"
@@ -117,63 +121,65 @@
         </section>
         <section class="the-most-demanding-courses">
             <h1>Ən təlabatlı kurslarımız</h1>
-            <div class="carousel">
-                <i class="fa-solid fa-angle-left"></i>
-                <div class="interior-design">
-                    <div class="interior-design-image">
-                        <img src="./assets/interior-design-image.svg" alt="interior-design-image">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <div class="carousel">
+                    <div class="interior-design card">
+                        <div class="interior-design-image">
+                            <img src="./assets/interior-design-image.svg" alt="interior-design-image">
+                        </div>
+                        <div class="interior-design-text">
+                            <p>Dizayn</p>
+                            <p>Interyer Dizayn</p>
+                        </div>
                     </div>
-                    <div class="interior-design-text">
-                        <p>Dizayn</p>
-                        <p>Interyer Dizayn</p>
+                    <div class="grapich-design card">
+                        <div class="grapich-design-image">
+                            <img src="./assets/grapich-design-image.svg" alt="grapich-design">
+                        </div>
+                        <div class="grapich-design-text">
+                            <p>Dizayn</p>
+                            <p>Qrafik Dizayn</p>
+                        </div>
+                    </div>
+                    <div class="back-end card">
+                        <div class="back-end-image">
+                            <img src="./assets/back-end-iamge.svg" alt="back-end">
+                        </div>
+                        <div class="back-end-text">
+                            <p>Proqlamlaşdırma</p>
+                            <p>Back-end proqlamlaşdırma</p>
+                        </div>
+                    </div>
+                    <div class="ui-ux-design card">
+                        <div class="ui-ux-design-image">
+                            <img src="./assets/ui-ux-design-image.svg" alt="ui-ux-design">
+                        </div>
+                        <div class="ui-ux-design-text">
+                            <p>Dizayn</p>
+                            <p>UI/UX Dizayn</p>
+                        </div>
+                    </div>
+                    <div class="front-end card">
+                        <div class="front-end-image">
+                            <img src="./assets/front-end-image.svg" alt="front-end-image">
+                        </div>
+                        <div class="front-end-text">
+                            <p>Proqlamlaşdırma</p>
+                            <p>Front-end proqlamlaşdırma</p>
+                        </div>
+                    </div>
+                    <div class="exterior-design card">
+                        <div class="exterior-design-image">
+                            <img src="./assets/exterior-design-image.svg" alt="exterior-design">
+                        </div>
+                        <div class="exterior-design-text">
+                            <p>Dizayn</p>
+                            <p>Eksteryer Dizayn</p>
+                        </div>
                     </div>
                 </div>
-                <div class="grapich-design">
-                    <div class="grapich-design-image">
-                        <img src="./assets/grapich-design-image.svg" alt="grapich-design">
-                    </div>
-                    <div class="grapich-design-text">
-                        <p>Dizayn</p>
-                        <p>Qrafik Dizayn</p>
-                    </div>
-                </div>
-                <div class="back-end">
-                    <div class="back-end-image">
-                        <img src="./assets/back-end-iamge.svg" alt="back-end">
-                    </div>
-                    <div class="back-end-text">
-                        <p>Proqlamlaşdırma</p>
-                        <p>Back-end proqlamlaşdırma</p>
-                    </div>
-                </div>
-                <div class="ui-ux-design">
-                    <div class="ui-ux-design-image">
-                        <img src="./assets/ui-ux-design-image.svg" alt="ui-ux-design">
-                    </div>
-                    <div class="ui-ux-design-text">
-                        <p>Dizayn</p>
-                        <p>UI/UX Dizayn</p>
-                    </div>
-                </div>
-                <div class="front-end">
-                    <div class="front-end-image">
-                        <img src="./assets/front-end-image.svg" alt="front-end-image">
-                    </div>
-                    <div class="front-end-text">
-                        <p>Proqlamlaşdırma</p>
-                        <p>Front-end proqlamlaşdırma</p>
-                    </div>
-                </div>
-                <div class="exterior-design">
-                    <div class="exterior-design-image">
-                        <img src="./assets/exterior-design-image.svg" alt="exterior-design">
-                    </div>
-                    <div class="exterior-design-text">
-                        <p>Dizayn</p>
-                        <p>Eksteryer Dizayn</p>
-                    </div>
-                </div>
-                <i class="fa-solid fa-angle-right"></i>
+                <i id="right" class="fa-solid fa-angle-right"></i>
             </div>
         </section>
         <section class="home-start-course-now" data-aos="fade-up" data-aos-duration="1000">
