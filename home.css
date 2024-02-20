@@ -31,7 +31,6 @@ header {
     padding: 30px;
     width: 300px;
     display: none;
-    transition: left .3s ease;
 }
 
 .home-menu>i {
