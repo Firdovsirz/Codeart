@@ -1075,4 +1075,15 @@ footer>.footer-codeart-logo {
     footer>.footer-main{
         margin-right: 20px;
     }
+    main>.the-most-demanding-courses{
+        width: calc(100vw - 70px);
+        margin: 30px;
+    }
+    main>.the-most-demanding-courses>.wrapper{
+        min-width: 300px;
+        /* width: 100%; */
+    }
+    main>.the-most-demanding-courses>.wrapper>.carousel{
+        max-width: calc(100vw - 70px);
+    }
 }
