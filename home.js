@@ -9,52 +9,30 @@ closeMenu.addEventListener("click", () => {
     menu.style.display = 'none';
     openMenu.style.display = 'flex';
 });
-
-//change lang-curr
-let azn = document.querySelector('.home-azn');
-let usd = document.querySelector('.home-usd');
-let displayCurr = document.getElementById('displayCurr');
-let currBlock = document.querySelector('.nav-currency');
-let currList = document.getElementById('homeCurrList');
-currBlock.addEventListener('click', () => {
-    if (currList.style.display === 'none') {
-        currList.style.display = 'block';
-    } else {
-        currList.style.display = 'none'
-    }
-});
-const setCurr = () => {
-    azn.addEventListener('click', () => {
-        displayCurr.innerText = 'AZN';
-    });
-    usd.addEventListener('click', () => {
-        displayCurr.innerText = 'USD';
-    });
-}
-setCurr();
-
-let aze = document.querySelector('.home-az');
-let en = document.querySelector('.home-en');
+//change language
 let displayLang = document.getElementById('displayLang');
-let langBlock = document.querySelector('.language');
-let langList = document.getElementById('homeLangList');
-langBlock.addEventListener('click', () => {
-    if (langList.style.display === 'none') {
-        langList.style.display = 'block';
+let changeIcon = document.getElementById('changeLangIcon');
+let closeIcon = document.getElementById('closeLang');
+let langBlock = document.querySelector('.lang-change');
+let changeAz = document.getElementById('changeToAz');
+let changeEn = document.getElementById('changeToEn');
+changeIcon.addEventListener('click', () => {
+    if (langBlock.style.display === 'none') {
+        langBlock.style.display = 'block';
+        changeIcon.style.transform = 'rotate(180deg)';
     } else {
-        langList.style.display = 'none';
+        langBlock.style.display = 'none';
+        changeIcon.style.transform = 'rotate(0deg)';
     }
 });
-const setLang = () => {
-    aze.addEventListener('click', () => {
-        displayLang.innerText = 'Azərbaycan dili';
-    });
-    en.addEventListener('click', () => {
-        displayLang.innerText = 'İngilis dili';
-    });
-}
-setLang();
-
+changeAz.addEventListener('click', () => {
+    displayLang.innerText = 'Az';
+    langBlock.style.display = 'none';
+});
+changeEn.addEventListener('click', () => {
+    displayLang.innerText = 'En';
+    langBlock.style.display = 'none';
+});
 //carousel
 const carousel = document.querySelector('.carousel'),
     firstCard = document.querySelectorAll('.card')[0];
