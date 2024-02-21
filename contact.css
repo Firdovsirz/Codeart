@@ -1216,7 +1216,15 @@ footer>.footer-codeart-logo {
     }
 }
 @media (max-width: 500px){
-    
+    main>.additional-questions{
+        padding: 50px;
+    }
+    main>.additional-questions>.additional-questions-text>h1{
+        font-size: 20px;
+    }
+    main>.additional-questions>.additional-questions-text{
+        text-align: center;
+    }
     header>.contact-nav-secondary>.contact-nav-secondary-logo-search-box{
         display: flex;
         justify-content: center;
