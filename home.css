@@ -842,15 +842,20 @@ footer>.footer-codeart-logo {
 ::-webkit-scrollbar-thumb:hover {
     background: rgb(208, 208, 208);
 }
-
+#left{
+    display: none;
+}
+#right{
+    display: none;
+}
 @media (max-width: 1400px) {
     .the-most-demanding-courses>div>div {
         flex-wrap: wrap;
     }
-    main>.the-most-demanding-courses>.wrapper>.carousel{
+    /* main>.the-most-demanding-courses>.wrapper>.carousel{
         display: flex;
         justify-content: space-evenly;
-    }
+    } */
 }
 
 @media (max-width: 1100px) {
@@ -904,7 +909,7 @@ footer>.footer-codeart-logo {
         position: absolute;
         right: -25px;
         top: calc(50% - 40px);
-        /* display: none; */
+        display: none;
     }
 
     main>.the-most-demanding-courses>.wrapper>.carousel>div:not(:last-child) {
@@ -952,6 +957,12 @@ footer>.footer-codeart-logo {
     }
 }
 @media (max-width: 500px){
+    #left{
+        display: block;
+    }
+    #right{
+        display: block;
+    }
     header>.nav-secondary>.nav-secondary-logo-search-box>.search-box{
         display: none;
     }
@@ -959,8 +970,21 @@ footer>.footer-codeart-logo {
         display: flex;
         justify-content: center;
     }
-    main>.advantages{
-        display: none;
+    main>.advantages>article{
+        padding: 10px;
+        width: calc(100vw - 20px);
+    }
+    main>.advantages>h1{
+        font-size: 30px;
+    }
+    main>.advantages>article>*{
+        margin: 10px;
+    }
+    main>.advantages>article>*>div>p:first-child{
+        font-size: 45px;
+    }
+    main>.advantages>article>*>div>p:last-child{
+        font-size: 15px;
     }
     main>.home-teachers{
         display: none;
@@ -983,10 +1007,6 @@ footer>.footer-codeart-logo {
         flex-direction: column;
         justify-content: center;
     }
-    main>.the-most-demanding-courses>.carousel{
-        width: calc(100% + 200px);
-        min-width: 400px;
-    }
     main>.home-start-course-now{
         margin: 0;
         width: 100%;
@@ -1000,7 +1020,6 @@ footer>.footer-codeart-logo {
     }
     main>.the-most-demanding-courses>.wrapper{
         min-width: 300px;
-        /* width: 100%; */
     }
     main>.the-most-demanding-courses>.wrapper>.carousel{
         max-width: calc(100vw - 70px);
@@ -1022,10 +1041,7 @@ footer>.footer-codeart-logo {
         justify-content: center;
         align-items: center;
     }
-}
-#left{
-    display: none;
-}
-#right{
-    display: none;
+    footer>.laws{
+        padding: 20px;
+    }
 }
