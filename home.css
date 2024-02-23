@@ -524,7 +524,7 @@ main>.home-teachers{
     justify-content: center;
     flex-direction: column;
     width: calc(100vw - 300px);
-    /* margin: 50px auto; */
+    margin: 50px auto;
 }
 main>.home-teachers >i {
     display: none;
@@ -891,6 +891,10 @@ footer>.footer-codeart-logo {
         justify-content: space-between;
         display: none;
     }
+    main>.the-most-demanding-courses{
+        margin: 50px 0;
+        width: 100%;
+    }
     main>.the-most-demanding-courses>.wrapper {
         position: relative;
     }
@@ -925,7 +929,7 @@ footer>.footer-codeart-logo {
     }
 
     main>.the-most-demanding-courses>.wrapper>.carousel {
-        max-width: calc(100vw - 300px);
+        max-width: calc(100vw - 100px);
         display: flex;
         flex-wrap: nowrap;
         flex-direction: row;
@@ -955,6 +959,8 @@ footer>.footer-codeart-logo {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
+        margin: 0 auto;
     }
     main>.home-teachers>.home-teachers-cards{
         display: flex;
@@ -972,12 +978,28 @@ footer>.footer-codeart-logo {
         justify-content: center;
         align-items: center;
     }
+    main>.advantages{
+        margin: 50px 0;
+        width: 100%;
+    }
     main>.advantages>article{
         padding: 30px;
         width: fit-content;
     }
     main>.advantages>article>*>div>p{
         font-size: 10px;
+    }
+    footer>.footer-main{
+        padding: 20px;
+    }
+    footer>.footer-main>div{
+        margin-right: 30px;
+        margin-bottom: 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media (max-width: 600px){
@@ -994,12 +1016,17 @@ footer>.footer-codeart-logo {
         display: flex;
         justify-content: center;
     }
-    main>.advantages>article{
-        padding: 10px;
-        width: calc(100vw - 20px);
+    main>.advantages{
+        margin: 50px 0;
+        margin-bottom: 50px;
+        width: 100%;
     }
     main>.advantages>h1{
         font-size: 30px;
+        margin-bottom: 20px;
+    }
+    main>.advantages>article{
+        padding: 5px;
     }
     main>.advantages>article>*{
         margin: 10px;
@@ -1046,17 +1073,31 @@ footer>.footer-codeart-logo {
         max-width: calc(100vw - 70px);
     }
     main>.home-teachers{
-        width: fit-content;
+        margin-right: 0;
+    }
+    main>.home-teachers>.home-teachers-cards{
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        width: 100vw;
     }
     main>.home-teachers>.home-teachers-cards>div{
-        display: flex;
+        /* display: flex; */
+        width: 50%;
+        /* flex-direction: row; */
     }
     main>.home-teachers>.home-teachers-cards>div>div:first-child{
-        width: 170px;
+        width: 50%;
+    }
+    main>.home-teachers>.home-teachers-cards>div>div:first-child>img{
+        width: 100%;
+    }
+    main>.home-teachers>.home-teachers-cards>div>div:last-child{
+        /* width: fit-content; */
+    }
+    main>.home-teachers>.home-teachers-cards>div>div:last-child>h2{
+        font-size: 15px;
+    }
+    main>.home-teachers>.home-teachers-cards>div>div:last-child>p{
+        font-size: 12px;
     }
     footer>.footer-main{
         display: flex;
