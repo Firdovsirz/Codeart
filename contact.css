@@ -213,50 +213,38 @@ header>.contact-nav-main {
 .contact-nav-main>.contact-nav-pages>ul>li:not(:last-child) {
     margin-right: 25px;
 }
-
-.contact-nav-main>.contact-nav-curr-lang {
-    display: flex;
-}
-
-
-.contact-nav-main>.contact-nav-curr-lang>div {
-    display: flex;
-    align-items: center;
-}
-
-.contact-nav-main>.contact-nav-curr-lang>div:first-child {
-    margin-right: 30px;
-    position: relative;
-}
-
-.contact-change-currency {
-    position: absolute;
-    top: 20px;
-    left: -5px;
-    background-color: white;
-    color: #1B213F;
-    border-radius: 5px;
-    z-index: 1002;
-    border: 1px solid gray;
-    display: none;
-}
-
-.contact-change-currency>div {
-    padding: 5px 10px;
-}
-
-.contact-change-currency>div:hover {
-    cursor: pointer;
-}
-
-.contact-change-currency>div:not(:last-child) {
-    border-bottom: 1px solid gray;
-}
-
 .contact-nav-main>.contact-nav-curr-lang>div:last-child {
     position: relative;
 }
-
+.contact-nav-lang{
+    position: relative;
+}
+.contact-nav-lang>div{
+    display: flex;
+    align-items: center;
+}
+.contact-nav-lang>div>p{
+    margin-right: 5px;
+}
+.contact-nav-lang>.change-lang{
+    position: absolute;
+    top: 20px;
+    left: 0;
+    background-color: white;
+    color: black;
+    border: 1px solid rgb(191, 191, 191);
+    border-radius: 5px;
+}
+.contact-nav-lang>.change-lang>p{
+    padding: 5px;
+    text-align: center;
+}
+.contact-nav-lang>.change-lang>p:hover{
+    cursor: pointer;
+}
+.contact-nav-lang>.change-lang>p:not(:last-child){
+    border-bottom: 1px solid rgb(191, 191, 191);
+}
 .contact-change-language {
     position: absolute;
     top: 25px;
@@ -1028,7 +1016,7 @@ footer>.footer-codeart-logo {
     color: rgba(255, 255, 255, 0.20);
 }
 
-@media (max-width : 1500px) {
+@media (min-width: 1100px) and (max-width : 1500px) {
     #menuBar {
         display: flex;
     }
@@ -1037,18 +1025,20 @@ footer>.footer-codeart-logo {
         margin-right: 20px;
     }
 
-    .contact-course-cards {
+    main>.contact-course-cards {
         width: calc(100vw - 300px);
-        justify-content: space-between;
+        display: flex;
+        /* justify-content: space-between; */
+        flex-wrap: wrap;
         padding: 10px;
         width: 100%;
-        align-items: center;
+        /* align-items: center; */
     }
     .contact-course-cards>.caoursel{
         flex-wrap: wrap;
         width: calc(100vw - 300px);
     }
-    .contact-course-cards>.caoursel>.card{
+    main>.contact-course-cards>.caoursel>.card:not(:last-child){
         margin-right: 30px;
 
     }

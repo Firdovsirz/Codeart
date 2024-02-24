@@ -43,46 +43,22 @@ closeMenu.addEventListener("click", () => {
     openMenu.style.display = 'flex';
 });
 
-//change currency
-let currChangeButton = document.querySelector('.contact-nav-currency');
-let currList = document.getElementById('currList');
-currChangeButton.addEventListener('click', () => {
-    if (currList.style.display === "none") {
-        currList.style.display = 'block';
+//change language
+let langBlock = document.querySelector('.change-lang');
+let changeIcon = document.getElementById('changeIcon');
+let changeToAz = document.getElementById('changeToAz');
+let changeToEn = document.getElementById('changeToEn');
+let langDisplay = document.getElementById('langDisplay');
+changeIcon.addEventListener('click', () => {
+    if(langBlock.style.display === 'none'){
+        langBlock.style.display = 'block';
     } else {
-        currList.style.display = 'none';
+        langBlock.style.display = 'none';
     }
 });
-let langChangeButton = document.querySelector('.language');
-let langList = document.getElementById('langList');
-langChangeButton.addEventListener('click', () => {
-    if (langList.style.display === "none") {
-        langList.style.display = 'block';
-    } else {
-        langList.style.display = "none";
-    }
+changeToAz.addEventListener('click', ()=>{
+    langDisplay.innerText = 'Az';
 });
-let changeToAzn = document.querySelector('.azn');
-let changeToUsd = document.querySelector('.usd');
-let displayCurr = document.getElementById('displayCurr');
-const setCurr = () => {
-    changeToAzn.addEventListener('click', () => {
-        displayCurr.innerHTML = 'AZN';
-    });
-    changeToUsd.addEventListener('click', () => {
-        displayCurr.innerText = 'USD';
-    })
-}
-setCurr();
-let changeToAze = document.querySelector('.aze');
-let changeToEn = document.querySelector('.en');
-let displayLang = document.getElementById('displayLang');
-const setLang = () => {
-    changeToAze.addEventListener('click', () => {
-        displayLang.innerHTML = 'Azərbaycan dili';
-    });
-    changeToEn.addEventListener('click', () => {
-        displayLang.innerHTML = 'İngilis dili';
-    });
-}
-setLang();
+changeToEn.addEventListener('click', ()=>{
+    langDisplay.innerText = 'En';
+});

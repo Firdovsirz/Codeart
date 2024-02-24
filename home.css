@@ -206,38 +206,6 @@ header>.nav-pages>i {
 .nav-main>.nav-pages>ul>li:not(:last-child) {
     margin-right: 25px;
 }
-.nav-main>.nav-lang{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-}
-.nav-main>.nav-lang >i{
-    margin-left: 5px;
-    transform: translateY(10%);
-}
-.nav-main>.nav-lang >i:hover{
-    cursor: pointer;
-}
-.nav-main>.nav-lang>.lang-change{
-    position: absolute;
-    top: 20px;
-    left: 0;
-    background-color: white;
-    color: black;
-    border: 1px solid rgb(190, 190, 190);
-    border-radius: 5px;
-    display: none;
-}
-.nav-main>.nav-lang>.lang-change>p{
-    padding: 5px 12px;
-}
-.nav-main>.nav-lang>.lang-change>p:hover{
-    cursor: pointer;
-}
-.nav-main>.nav-lang>.lang-change>p:not(:last-child){
-    border-bottom: 1px solid rgb(190, 190, 190);
-}
 .nav-secondary {
     display: flex;
     justify-content: space-between;
