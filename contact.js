@@ -2,7 +2,7 @@ const carousel = document.querySelector('.carousel');
 const arrowIcons = document.querySelectorAll(".contact-course-cards i");
 let isDragStart = false, prevPageX, prevScrollLeft;
 let firstCard = document.querySelectorAll('div')[0];
-let firstCardWidth = firstCard.clientWidth + 300;
+let firstCardWidth = firstCard.clientWidth + 100;
 arrowIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
         carousel.scrollLeft += icon.id == "left" ? -firstCardWidth : firstCardWidth;
