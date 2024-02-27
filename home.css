@@ -1074,15 +1074,14 @@ footer>.footer-codeart-logo {
         display: flex;
         flex-direction: row;
         flex-wrap: nowrap;
+        scroll-behavior: smooth;
     }
     main>.home-teachers>.home-teachers-cards>.teacher-card{
-        height: 340px;
+        height: 400px;
         object-fit: cover;
-        margin-left: 14px;
-        width: calc(100% / 3);
-    }
-    main>.home-teachers>.home-teachers-cards>.teacher-card{
-        margin-left: 0;
+        margin-left: 30px;
+        width: 20px;
+        text-align: center;
     }
     footer>.footer-main{
         display: flex;
