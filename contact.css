@@ -234,6 +234,7 @@ header>.contact-nav-main {
     color: black;
     border: 1px solid rgb(191, 191, 191);
     border-radius: 5px;
+    display: none;
 }
 .contact-nav-lang>.change-lang>p{
     padding: 5px;
@@ -452,6 +453,12 @@ main>.contact-course-cards {
     display: flex;
     justify-content: space-between;
     width: 100%;
+}
+#left{
+    display: none;
+}
+#right{
+    display: none;
 }
 
 .design-card {
@@ -1049,6 +1056,15 @@ footer>.footer-codeart-logo {
 }
 
 @media (max-width : 1100px) {
+    #left{
+        display: flex;
+    }
+    #right{
+        display: flex;
+    }
+    #menubar{
+        display: flex;
+    }
     .contact-nav-secondary-logo-search-box {
         display: flex;
         justify-content: space-between;
@@ -1209,6 +1225,9 @@ footer>.footer-codeart-logo {
     }
 }
 @media (max-width: 600px){
+    #menubar{
+        display: flex;
+    }
     main>.additional-questions>.additional-questions-text>h1{
         font-size: 20px;
     }
@@ -1250,7 +1269,7 @@ footer>.footer-codeart-logo {
     }
     
     footer>.footer-main>div{
-        margin-right: 40px;
+        margin-right: 0;
         margin-block: 20px;
         text-align: center;
     }
