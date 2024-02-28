@@ -72,38 +72,3 @@ carousel.addEventListener("mousedown", dragStart);
 carousel.addEventListener('mousemove', dragging);
 carousel.addEventListener("mousemove", dragging);
 carousel.addEventListener("mouseleave", dragStop);
-
-
-//carousel teacher
-const teachCarousel = document.querySelector('.home-teachers-cards'),
-firstCardTeach = teachCarousel.querySelectorAll('.teacher-card')[0];
-arrowIconsTeach = document.querySelectorAll('.home-teachers i');
-let scrollWidthTeach = teachCarousel.scrollWidthTeach - teachCarousel.clientWidth;
-let isDragStartTeach = false, prevPageXTeach, prevScrollLeftTeach;
-arrowIconsTeach.forEach(iconTeach =>{
-    iconTeach.addEventListener('click', ()=>{
-        let firstCardTeachWidth = firstCardTeach.clientWidth + 30;
-        teachCarousel.scrollLeft += iconTeach.id == "tech-left" ? -firstCardTeachWidth : firstCardTeachWidth;
-    })
-});
-const dragStartTeach = (e) => {
-    isDragStartTeach = false;
-    prevPageXTeach= e.pageX;
-    prevScrollLeftTeach = teachCarousel.scrollLeft;
-}
-const draggingTeach = (e) => {
-    if (!isDragStartTeach) return;
-    e.preventDefault();
-    teachCarousel.scrollLeft = e.pageX;
-    let positionDiffTeach = e.pageX - prevPageXTeach;
-    teachCarousel.scrollLeft = prevScrollLeftTeach - positionDiffTeach;
-}
-const dragStopTeach = (e) => {
-    isDragStartTeach = false;
-}
-const draggStopTeach = (e) =>{
-    isDragStartTeach = false;
-}
-teachCarousel.addEventListener('mousedown', dragStartTeach);
-teachCarousel.addEventListener('mousemove', draggingTeach);
-teachCarousel.addEventListener('mouseup', draggStopTeach);

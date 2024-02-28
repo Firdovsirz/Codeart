@@ -183,11 +183,16 @@ header>.nav-pages>i {
     transition: .3s;
 }
 .nav-lang{
-    display: flex;
-    align-items: center;
     position: relative;
 }
-.nav-lang>p{
+.nav-lang-main{
+    display: flex;
+    align-items: center;
+}
+.nav-lang-main>i{
+    margin-top: 2px;
+}
+.nav-lang-main>p{
     margin-right: 5px;
 }
 .lang-change{

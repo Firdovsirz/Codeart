@@ -2,9 +2,9 @@ const carousel = document.querySelector('.carousel');
 const arrowIcons = document.querySelectorAll(".contact-course-cards i");
 let isDragStart = false, prevPageX, prevScrollLeft;
 let firstCard = document.querySelectorAll('div')[0];
-let firstCardWidth = firstCard.clientWidth + 5;
 arrowIcons.forEach((icon) => {
     icon.addEventListener("click", () => {
+        let firstCardWidth = firstCard.clientWidth;
         carousel.scrollLeft += icon.id == "left" ? -firstCardWidth : firstCardWidth;
     })
 })
@@ -52,8 +52,10 @@ let langDisplay = document.getElementById('langDisplay');
 changeIcon.addEventListener('click', () => {
     if(langBlock.style.display === 'none'){
         langBlock.style.display = 'block';
+        changeIcon.style.transform = 'rotate(180deg)';
     } else {
         langBlock.style.display = 'none';
+        changeIcon.style.transform = 'rotate(0)';
     }
 });
 changeToAz.addEventListener('click', ()=>{

@@ -18,10 +18,6 @@ header {
 .menu-container{
     position: relative;
 }
-#menuBar {
-    display: none;
-}
-
 .menu {
     z-index: 100;
     position: absolute;
@@ -213,66 +209,32 @@ header>.contact-nav-main {
 .contact-nav-main>.contact-nav-pages>ul>li:not(:last-child) {
     margin-right: 25px;
 }
-.contact-nav-main>.contact-nav-curr-lang>div:last-child {
-    position: relative;
+.contact-nav-lang-main{
+    display: flex;
 }
 .contact-nav-lang{
     position: relative;
 }
-.contact-nav-lang>div{
-    display: flex;
-    align-items: center;
+.contact-nav-lang-main>i{
+    margin-top: 2px;
+    margin-left: 5px;
 }
-.contact-nav-lang>div>p{
-    margin-right: 5px;
-}
-.contact-nav-lang>.change-lang{
-    position: absolute;
-    top: 20px;
-    left: 0;
+.change-lang{
+    border: 1px solid rgb(211, 211, 211);
+    border-radius: 5px;
     background-color: white;
     color: black;
-    border: 1px solid rgb(191, 191, 191);
-    border-radius: 5px;
-    display: none;
-}
-.contact-nav-lang>.change-lang>p{
-    padding: 5px;
-    text-align: center;
-}
-.contact-nav-lang>.change-lang>p:hover{
-    cursor: pointer;
-}
-.contact-nav-lang>.change-lang>p:not(:last-child){
-    border-bottom: 1px solid rgb(191, 191, 191);
-}
-.contact-change-language {
+    width: fit-content;
     position: absolute;
-    top: 25px;
-    left: 15px;
-    background-color: white;
-    color: #1B213F;
-    border-radius: 5px;
-    z-index: 1002;
-    border: 1px solid gray;
+    top: 20px;
     display: none;
-    width: 100%;
 }
-
-.contact-change-language>div {
-    padding: 2px;
-    text-align: center;
-    font-size: 18px;
+.change-lang>p:not(:last-child){
+    border-bottom: 1px solid rgb(211, 211, 211);
 }
-
-.contact-change-language>div:not(:last-child) {
-    border-bottom: 1px solid gray;
+.change-lang>p{
+    padding: 5px;
 }
-
-.contact-nav-main>.contact-nav-curr-lang *>p {
-    margin-right: 5px;
-}
-
 .contact-nav-secondary {
     display: flex;
     justify-content: space-between;
