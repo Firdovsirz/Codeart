@@ -119,7 +119,6 @@ header {
     width: 100%;
     position: relative;
     color: white;
-    z-index: 1001;
 }
 
 .home-menu-buttons>.home-menu-create-account-btn:after {
@@ -316,7 +315,7 @@ header>.nav-pages>i {
     width: 0;
     height: 40px;
     background-color: #3B8AC9;
-    z-index: 3;
+    z-index: -1;
     transition: .7s ease;
 }
 
